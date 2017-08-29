@@ -40,7 +40,7 @@ dependencies {
     compile 'io.reactivex.rxjava2:rxjava:2.0.9'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
-/*repositories {
+repositories {
     mavenCentral()
-}*/
+}
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
