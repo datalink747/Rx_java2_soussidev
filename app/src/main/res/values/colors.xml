@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="md_drawer_background">#e0e044</color>
+
+    <color name="md_primary">#000</color>
+
+    <color name="md_inset_foreground">#6a000000</color>
+
+    <color name="md_header">#6a000000</color>
+
+    <color name="md_divider">#8e99e5</color>
+
+    <color name="md_selected">#14000000</color>
+
+    <color name="md_scrim_start">#0000</color>
+    <color name="md_scrim_end">#8a000000</color>
+
+    <color name="md_fixed_list_shadow_start">#0000</color>
+    <color name="md_fixed_list_shadow_end">#18000000</color>
+
+    <color name="color_accent">#7c4dff</color>
+    <color name="color_success">#3CCD88</color>
+    <color name="color_error">#f44336</color>
+
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+
+    <color name="color_primary">#795548</color>
+    <color name="color_primary_dark">#5D4037</color>
+    <color name="color_accent2">#FF5722</color>
+    <color name="cyan_500">#009900</color>
+
+    <color name="checkbox_color">#6d6d6d</color>
+    <color name="checkbox_checked_color">#55b03d</color>
+    <color name="checkbox_mark_color">#eeeeee</color>
+
+    <color name="thumbColor">#66aaaaaa</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+
+    <color name="rfab__color_text_label_item">#777777</color>
+
+    <color name="rfab__color_background_normal">#ffffff</color>
+    <color name="rfab__color_background_pressed">#dddddd</color>
+
+
+    <color name="rfab__color_frame">#ffffff</color>
+
+
+    <color name="rfab__color_shadow">#c6c6c6</color>
+
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+</resources>

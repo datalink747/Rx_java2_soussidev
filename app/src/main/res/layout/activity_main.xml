@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.soussidev.kotlin.rx_java2_soussidev.MainActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/applayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+       >
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:layout_collapseMode="parallax"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <!-- Les nouveaux onglets -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs1"
+            android:elevation="5dp"
+            app:tabIndicatorHeight="5dp"
+            app:tabIndicatorColor="@color/color_error"
+            app:tabSelectedTextColor="@color/md_drawer_background"
+            android:layout_width="match_parent"
+            app:tabGravity="center"
+            app:tabMode="scrollable"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_height="70dp" />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_marginTop="130dp"
+        android:layout_below="@id/applayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+         />
+
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+
+</android.support.constraint.ConstraintLayout>
