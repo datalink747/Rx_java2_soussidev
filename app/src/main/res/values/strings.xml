@@ -3,4 +3,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="waiting_for_connectivity_status">Waiting for connectivity status&#8230;</string>
+    <string name="waiting_for_internet_status">Waiting for Internet status&#8230;</string>
+    <string name="connectivity_status">Connectivity status:</string>
+    <string name="internet_status">Internet status:</string>
 </resources>
