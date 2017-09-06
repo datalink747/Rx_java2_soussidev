@@ -5,6 +5,20 @@
     tools:context="com.soussidev.kotlin.rx_java2_soussidev.RxSharedpref_fragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/rxpref"
+        android:text="RxSharedPref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#cc5577"
+        android:textStyle="bold"
+        android:textSize="19dp"
+        android:fontFamily="serif"
 
+        android:layout_marginTop="60dp"
+
+        android:singleLine="false"
+        android:ellipsize="end"
+        />
 
 </FrameLayout>

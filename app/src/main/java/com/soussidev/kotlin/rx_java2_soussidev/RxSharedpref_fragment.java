@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.soussidev.kotlin.rx_java2_lib.RxSharedPreferences_java;
 import com.soussidev.kotlin.rx_java2_soussidev.model.Admin;
@@ -17,7 +18,9 @@ import io.reactivex.Observable;
 
 
 public class RxSharedpref_fragment extends Fragment {
-
+  private  TextView rxpref;
+  private  String textlog1,textlog2,textlog3,textlog4,textlog5,textlog6;
+  private StringBuilder sb;
 
     public RxSharedpref_fragment() {
         // Required empty public constructor
@@ -46,6 +49,10 @@ public class RxSharedpref_fragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        rxpref=(TextView)view.findViewById(R.id.rxpref);
+
+
+
         final SharedPreferences sharedPreferences = getActivity().getSharedPreferences("prefs", Context.MODE_PRIVATE);
         final RxSharedPreferences_java rxShared = RxSharedPreferences_java.with(sharedPreferences);
 
@@ -59,12 +66,15 @@ public class RxSharedpref_fragment extends Fragment {
                 .flatMap(stringMap -> Observable.fromIterable(stringMap.entrySet()))
                 .map(Object::toString)
 
-                .subscribe(s -> Log.d("TAG 1", s));
+               // .subscribe(s -> Log.d("TAG 1", s)
+                .subscribe(s -> textlog1="Subscribe :"+s+"\n"
+                );
 
         rxShared.getInt("tel", 0)
                 .subscribe(tel -> {
                     //display phone
                     Log.d("TAG 2", "phone: " + tel);
+                    textlog2="phone :"+tel+"\n";
                 });
 
         Observable.just(new Admin())
@@ -97,9 +107,33 @@ public class RxSharedpref_fragment extends Fragment {
                     Log.d("TAG 3", admin.toString());
                     Log.d("TAG 4", admin.getEmail());
                     Log.d("TAG 5", admin.getTel().toString());
+
+                    textlog3="admin :"+admin.toString()+"\n";
+                    textlog4="admin email :"+admin.getEmail()+"\n";
+                    textlog5="admin phone :"+admin.getTel().toString()+"\n";
+                    textlog6="admin post :"+admin.getPost().toString()+"\n";
+
                 });
 
+        rxpref.setText(get_data());
     }
+    public String get_data()
+    {
+        sb =new StringBuilder();
+        sb.append(textlog1);
+        sb.append("\n");
+        sb.append(textlog2);
+        sb.append("\n");
+        sb.append(textlog3);
+        sb.append("\n");
+        sb.append(textlog4);
+        sb.append("\n");
+        sb.append(textlog5);
+        sb.append("\n");
+        sb.append(textlog6);
+        return sb.toString();
+    }
+
 
 
 }
