@@ -29,8 +29,8 @@ dependencies {
 }
 ```
 # Code :
->RxPref
-```
+> RxPref
+```java
 public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -120,8 +120,8 @@ public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
     }
 
 ```
->RxConnection
-```
+> RxConnection
+```java
  @Override
     public void onResume() {
         super.onResume();
@@ -156,6 +156,34 @@ public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         }
     }
 ```
+> RxActivityResult
+```java
+ private void getResultActivity()
+    {
+        final Intent intent = new Intent(getActivity(), Result.class);
+
+        RxActivityResultCompact.startActivityForResult(this, intent, REQUEST_CODE)
+                .subscribe(new Consumer<ActivityResult>() {
+                    @Override
+                    public void accept(@NonNull ActivityResult result) throws Exception {
+                        if (result.isOk()) {
+                            final String txt = result.getData().getStringExtra(Result.GET_TEXT);
+                            textresult.setText(txt);
+                        }
+                    }
+                });
+
+    }
+```
+* Activity: Result.class
++ Send result
+```java
+private Intent data = new Intent();
+
+data.putExtra(GET_TEXT, "Service is Disable");
+setResult(Activity.RESULT_OK, data);
+```
+
 # Linkedin
 
 <a href="https://www.linkedin.com/in/soussimohamed/">
