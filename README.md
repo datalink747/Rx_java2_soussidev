@@ -156,6 +156,11 @@ public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         }
     }
 ```
+# Linkedin
+
+<a href="https://www.linkedin.com/in/soussimohamed/">
+<img src="picture/linkedin.png" height="100" width="100" alt="Soussi Mohamed">
+</a>
 
 # Licence
 ```
