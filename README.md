@@ -25,7 +25,7 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 
 ```gradle
 dependencies {
-    compile 'com.github.datalink747:Rx_java2_soussidev:1.2'
+    compile 'com.github.datalink747:Rx_java2_soussidev:1.3'
 }
 ```
 # Code :
