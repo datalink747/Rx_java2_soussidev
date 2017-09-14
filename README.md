@@ -25,12 +25,12 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 
 ```gradle
 dependencies {
-    compile 'com.github.datalink747:Rx_java2_soussidev:1.2'
+    compile 'com.github.datalink747:Rx_java2_soussidev:1.3'
 }
 ```
 # Code :
->RxPref
-```
+> RxPref
+```java
 public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -120,8 +120,8 @@ public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
     }
 
 ```
->RxConnection
-```
+> RxConnection
+```java
  @Override
     public void onResume() {
         super.onResume();
@@ -156,6 +156,40 @@ public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         }
     }
 ```
+> RxActivityResult
+```java
+ private void getResultActivity()
+    {
+        final Intent intent = new Intent(getActivity(), Result.class);
+
+        RxActivityResultCompact.startActivityForResult(this, intent, REQUEST_CODE)
+                .subscribe(new Consumer<ActivityResult>() {
+                    @Override
+                    public void accept(@NonNull ActivityResult result) throws Exception {
+                        if (result.isOk()) {
+                            final String txt = result.getData().getStringExtra(Result.GET_TEXT);
+                            textresult.setText(txt);
+                        }
+                    }
+                });
+
+    }
+```
+* Activity: Result.class
++ Send result
+```java
+private Intent data = new Intent();
+
+data.putExtra(GET_TEXT, "Service is Disable");
+setResult(Activity.RESULT_OK, data);
+```
+
+# SDK Required
++ Target sdk:<br>
+[![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=23)
++ Min sdk:<br>
+[![API](https://img.shields.io/badge/API-19%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=19)
+
 # Linkedin
 
 <a href="https://www.linkedin.com/in/soussimohamed/">
