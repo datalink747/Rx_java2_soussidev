@@ -3,6 +3,8 @@
 A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 <br>
 [![](https://jitpack.io/v/datalink747/Rx_java2_soussidev.svg)](https://jitpack.io/#datalink747/Rx_java2_soussidev)
+[![Ansible Role](https://img.shields.io/badge/Developer-Soussidev-yellow.svg)]()
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
 # Preview :
 * RxSharedPref :
