@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new Rxanimationfragment(), "RxAnimation");
         adapter.addFragment(new RxConnectionfragment(), "RxConnection");
         adapter.addFragment(new RxActivityResult_fragment(), "RxActivityResult");
+        adapter.addFragment(new RxRecyclerviewfragment(), "RxRecyclerview");
         viewPager.setAdapter(adapter);
     }
 
