@@ -6,6 +6,14 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 [![Ansible Role](https://img.shields.io/badge/Developer-Soussidev-yellow.svg)]()
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
+# Include:
+[![Ansible Role](https://img.shields.io/badge/Rx-SharedPref-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-Bus-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-ActivityResult-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-Animation-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-Connection-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-Handler-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-Recyclerview-ff2c94.svg?style=flat-square)]()
 # Preview :
 * RxSharedPref :
 <img src="picture/pref.png" height="450" width="280">
