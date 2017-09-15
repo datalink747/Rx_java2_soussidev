@@ -34,6 +34,11 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 # Add dependencie to your project :
 
 ```gradle
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     compile 'com.github.datalink747:Rx_java2_soussidev:1.3'
 }
