@@ -40,7 +40,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.datalink747:Rx_java2_soussidev:1.3'
+    compile 'com.github.datalink747:Rx_java2_soussidev:1.4'
 }
 ```
 # Code :
