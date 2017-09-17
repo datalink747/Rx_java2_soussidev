@@ -6,9 +6,9 @@ package com.soussidev.kotlin.rx_java2_lib.RxVerify_Support_7;
 
 public interface TypeOfChangeBuilderCompac {
 
-    RxVerifyCompac onFocusChanged();
+   /* RxVerifyCompac onFocusChanged();
 
     RxVerifyCompac onValueChanged();
 
-    RxVerifyCompac onSubscribe();
+    RxVerifyCompac onSubscribe();*/
 }
