@@ -3,7 +3,17 @@
 A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 <br>
 [![](https://jitpack.io/v/datalink747/Rx_java2_soussidev.svg)](https://jitpack.io/#datalink747/Rx_java2_soussidev)
+[![Ansible Role](https://img.shields.io/badge/Developer-Soussidev-yellow.svg)]()
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)]()
 
+# Include:
+[![Ansible Role](https://img.shields.io/badge/Rx-SharedPref-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxSharedpref_fragment.java)
+[![Ansible Role](https://img.shields.io/badge/Rx-Bus-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxBusfragment.java)
+[![Ansible Role](https://img.shields.io/badge/Rx-ActivityResult-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxActivityResult_fragment.java)
+[![Ansible Role](https://img.shields.io/badge/Rx-Animation-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/Rxanimationfragment.java)
+[![Ansible Role](https://img.shields.io/badge/Rx-Connection-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxConnectionfragment.java)
+[![Ansible Role](https://img.shields.io/badge/Rx-Handler-ff2c94.svg?style=flat-square)]()
+[![Ansible Role](https://img.shields.io/badge/Rx-Recyclerview-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxRecyclerviewfragment.java)
 # Preview :
 * RxSharedPref :
 <img src="picture/pref.png" height="450" width="280">
@@ -24,8 +34,13 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 # Add dependencie to your project :
 
 ```gradle
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
-    compile 'com.github.datalink747:Rx_java2_soussidev:1.3'
+    compile 'com.github.datalink747:Rx_java2_soussidev:1.4'
 }
 ```
 # Code :
