@@ -1,15 +1,12 @@
 package com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.android;
 
 import android.content.Context;
-
 import android.support.annotation.NonNull;
 
 import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.AlertDialogBuilderOnSubscribe;
 import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.AlertDialogDialogEvent;
 import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.AlertDialogEvent;
 import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.RxAlertDialogBuilder;
-
-
 
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;

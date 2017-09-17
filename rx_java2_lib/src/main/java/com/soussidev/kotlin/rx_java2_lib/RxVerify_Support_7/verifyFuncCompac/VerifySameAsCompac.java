@@ -1,11 +1,8 @@
 package com.soussidev.kotlin.rx_java2_lib.RxVerify_Support_7.verifyFuncCompac;
 
 import android.support.v7.widget.AppCompatEditText;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import com.soussidev.kotlin.rx_java2_lib.RxVerify.RxVerifyResult;
-import com.soussidev.kotlin.rx_java2_lib.RxVerify.Verify;
 import com.soussidev.kotlin.rx_java2_lib.RxVerify_Support_7.RxVerifyCompacResult;
 import com.soussidev.kotlin.rx_java2_lib.RxVerify_Support_7.VerifyCompac;
 

@@ -1,7 +1,6 @@
 package com.soussidev.kotlin.rx_java2_lib.RxVerify_Support_7;
 
 import android.support.v7.widget.AppCompatEditText;
-import android.widget.EditText;
 
 import java.util.List;
 

@@ -8,8 +8,6 @@ import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.AlertDialogDialogEvent;
 import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.AlertDialogEvent;
 import com.soussidev.kotlin.rx_java2_lib.RxAlertDialog.RxAlertDialogBuilder;
 
-
-
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
