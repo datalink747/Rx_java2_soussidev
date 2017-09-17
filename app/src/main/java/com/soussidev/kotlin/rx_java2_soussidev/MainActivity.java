@@ -63,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new RxConnectionfragment(), "RxConnection");
         adapter.addFragment(new RxActivityResult_fragment(), "RxActivityResult");
         adapter.addFragment(new RxRecyclerviewfragment(), "RxRecyclerview");
+        adapter.addFragment(new RxHandlerfragment(), "RxHandler");
+        adapter.addFragment(new RxVerifyfragment(), "RxVerifyCompac");
+       // adapter.addFragment(new RxAlertDialog(), "RxAlertDialog");
         viewPager.setAdapter(adapter);
     }
 

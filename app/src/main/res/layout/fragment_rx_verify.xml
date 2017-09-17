@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.soussidev.kotlin.rx_java2_soussidev.RxVerifyfragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/title"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/color_accent2"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:text="RxVerify" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:textColor="@color/color_accent"
+            android:text="RxVerify For old Support"/>
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            />
+
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/edit_ConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/edit_Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="birthday"
+            />
+
+        <EditText
+            android:id="@+id/edit_Ip4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IP4 address"
+            />
+
+        <EditText
+            android:id="@+id/edit_Url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="https://"
+            />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/color_accent"
+                    android:text="RxVerifyCompac For New Support"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_phone_compac"
+                    android:hint="E-phone Number"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="#3CCD88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:counterTextAppearance="@style/counterText"
+                    app:counterOverflowTextAppearance="@style/counterOverride"
+                    >
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edit_phone_compac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_email_compac"
+                    android:hint="E-mail"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="#3CCD88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:counterTextAppearance="@style/counterText"
+                    app:counterOverflowTextAppearance="@style/counterOverride"
+                    >
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edit_email_compac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_url_compac"
+                    android:hint="Url Adresse"
+                    android:layout_marginLeft="5dp"
+                    android:textColorHint="#3CCD88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:counterTextAppearance="@style/counterText"
+                    app:counterOverflowTextAppearance="@style/counterOverride"
+                    >
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edit_url_compac"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:text="Verify!"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.soussidev.kotlin.rx_java2_soussidev.RxHandlerfragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Start RxHandler" />
+
+    <Button
+        android:id="@+id/btn_rxhandler"
+        style="@style/AppTheme.RaisedButton.Accent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_primary"
+        android:elevation="9dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:text="Start" />
+
+    <CheckBox
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/checkboxbinding"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/color_accent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checke Me to enable Button" />
+
+</FrameLayout>

@@ -8,4 +8,8 @@
     <string name="waiting_for_internet_status">Waiting for Internet status&#8230;</string>
     <string name="connectivity_status">Connectivity status:</string>
     <string name="internet_status">Internet status:</string>
+
+<!-- For Text Input Layout  -->
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
 </resources>
