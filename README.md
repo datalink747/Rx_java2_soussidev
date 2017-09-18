@@ -17,21 +17,29 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 [![Ansible Role](https://img.shields.io/badge/Rx-Handler-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxHandlerfragment.java)
 [![Ansible Role](https://img.shields.io/badge/Rx-Verify-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxVerifyfragment.java)
 # Preview :
-* RxSharedPref :
+<table>
+<tr>
+<td>
+<p>RxSharedPref </p>
 <img src="picture/pref.png" height="450" width="280">
-<br>
-
-* RxBus :
+</td>
+<td>
+<p>RxBus </p>
 <img src="picture/bus.png" height="450" width="280">
-<br>
-
-* RxAnimation :
+</td>
+<td>
+<p> RxAnimation </p>
 <img src="picture/animation.png" height="450" width="280">
-<br>
+</td>
+</tr>
+<tr>
 
-* RxConnection :
+<td>
+<p>RxConnection </p>
 <img src="picture/connection.png" height="450" width="280">
-<br>
+</td>
+</tr>
+</table>
 
 # Add dependencie to your project :
 
