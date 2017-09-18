@@ -16,6 +16,8 @@ A simple RxJava Lib contine (RxBus,RxAnimation,RxConnection and RxSharedPref)
 [![Ansible Role](https://img.shields.io/badge/Rx-Recyclerview-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxRecyclerviewfragment.java)
 [![Ansible Role](https://img.shields.io/badge/Rx-Handler-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxHandlerfragment.java)
 [![Ansible Role](https://img.shields.io/badge/Rx-Verify-ff2c94.svg?style=flat-square)](https://github.com/datalink747/Rx_java2_soussidev/blob/master/app/src/main/java/com/soussidev/kotlin/rx_java2_soussidev/RxVerifyfragment.java)
+
+[![Ansible Role](https://img.shields.io/badge/Rx-AlertDialog-ff0044.svg?style=flat-square)]()
 # Preview :
 <table>
 <tr>
