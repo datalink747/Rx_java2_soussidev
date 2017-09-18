@@ -42,7 +42,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.datalink747:Rx_java2_soussidev:1.4'
+    compile 'com.github.datalink747:Rx_java2_soussidev:1.5.3'
 }
 ```
 # Code :
@@ -199,6 +199,58 @@ private Intent data = new Intent();
 
 data.putExtra(GET_TEXT, "Service is Disable");
 setResult(Activity.RESULT_OK, data);
+```
+
+> RxVerify
+
+* Methode 1 :
+```java
+
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        edit_email=(EditText)findViewById(R.id.edit_email);
+        
+         //RxVerify Your E-mail and Ckeck Validate Domain Name
+        RxVerify.createFor(edit_email)
+                .nonEmpty()
+                .email()
+                .with(new VerifyEmailDomain())
+                .onValueChanged()
+                .toObservable()
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<RxVerifyResult<EditText>>() {
+                    @Override public void call(RxVerifyResult<EditText> result) {
+                        result.getItem().setError(result.isProper() ? null : result.getMessage());
+                        Log.i(TAG, "VerifyCompac result " + result.toString());
+                    }
+                }, new Action1<Throwable>() {
+                    @Override public void call(Throwable throwable) {
+                        Log.e(TAG, "VerifyCompac error", throwable);
+                    }
+                });
+                
+                }
+```
+* Methode 2 :
+> Using support-v7
+
+```java
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        edit_email_compac=(AppCompatEditText)view.findViewById(R.id.edit_email_compac);
+        inputemail_compac=(TextInputLayout)view.findViewById(R.id.input_email_compac);
+        
+        RxTextInputLayout.createFor(edit_email_compac,inputemail_compac).RxVerifyCustom(Patterns.EMAIL_ADDRESS,"Incorect E-mail !!");
+         
+         }
+        
+        
 ```
 
 # SDK Required
